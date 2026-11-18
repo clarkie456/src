@@ -1,0 +1,171 @@
+/* Most of these styles could be removed but are for the demo to look better */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-weight: 300;
+  font-family: 'Arsenal', sans-serif;
+  background-color: #710C04;
+}
+
+
+a {
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 70px;
+}
+
+h2.secondary {
+  font-size: 30px;
+}
+
+#map {
+  padding: 0 4rem;
+  box-sizing: border-box;
+  color: #FAFAFA
+}
+
+.full-screen {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#masthead {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 9999;
+}
+
+#masthead a {
+  padding: 1rem 2rem;
+}
+
+
+#panels #panels-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 600%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #48494B;
+}
+
+#panels #panels-container .panel {
+  position: relative;
+  flex: 0 0 100vw;
+  width: 100vw;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FAFAFA;
+  text-align: left;
+  border-right: 1px solid black;
+}
+
+#panels #panels-container .panel img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#panels #panels-container .panel .panels-navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+#panels #panels-container .panel .anchor-panel,
+#panels #panels-container .panel .nav-panel {
+  color: #000;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+
+#panels #panels-container .panels-navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+#panels .panel .container {
+  width: 100%;
+  align-self: center;
+  padding: 0 4rem;
+  box-sizing: border-box;
+}
+
+#panels .panel .row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#panels .panel .col-6 {
+  flex: 1;
+  min-width: 0;
+}
+
+#panels .panel img {
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  max-height: 80vh;
+}
+
+#panels .panel .poster-label {
+  margin: 0 0 0.75rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+#panels .panel .step-description {
+  display: none;
+}
+
+#panels .panel .step-description.visible {
+  display: block;
+}
+
+#panels .panel .info-button {
+  align-self: flex-start;
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #333;
+  background: transparent;
+  color: #333;
+  font: inherit;
+  cursor: pointer;
+}
+
+#panels .panel .info-button:hover {
+  background: #333;
+  color: #fff;
+}
